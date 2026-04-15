@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="navbar sec-background">
+            <img src="./Assets/logo3-1.png" alt="picture of logo">
+
+            <div class="excess">
+                <a href="login.html" class="user htext icons"><i class="far fa-user-circle"></i></a>
+                <label for="hamburgerToggle" class="hamburger icons htext">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div> 
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="index.html" class="htext body-text">Home</a></li>
+                    <li><a href="menu.html" class="htext body-text">Menu</a></li>
+                    <li><a href="about-us.html" class="htext body-text">About Us</a></li>
+                    <li><a href="contact.html" class="htext body-text">Contact Us</a></li>
+                    <li>
+                        <a href="#" id="searchIcon" class="htext body-text" onclick="document.getElementById('searchOverlayToggle').checked = true;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    <li><a href="login.html" class="htext icons"><i class="far fa-user-circle"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <input type="checkbox" id="searchOverlayToggle" style="display: none;"/>
+
+    <div class="background-overlay"></div>
+
+    <section class="overlay">
+        <div class="overlay-title">
+            <p class="heading3 ptext">Search for ...</p>
+            <label for="searchOverlayToggle" class="icons close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </div>
+        <hr>
+        <div>
+            <p class="body-text" style="padding-bottom: 20px;">Navigation Bar</p>
+            <ul>
+                <li><a href="index.html" class="body-text btext">Home</a></li>
+                <li><a href="menu.html" class="body-text btext">Menu</a></li>
+                <li><a href="about-us.html" class="body-text btext">About Us</a></li>
+                <li><a href="contact.html" class="body-text btext">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="about-text-box">
+            <p class="about-head heading2 primary-dark">ABOUT US</p>
+            <div>
+                <p class="body-text">Welcome to FAST FOOD, your go-to destination for fresth, delicious fast food delivered straight to your doorstep!We are passionate about blending quality ingredients with speedy service to create a seamless online dining experience. Our mission is to bring you the flavors you love, prepared with care and delivered hot and on time. At FAST FOOD, customer satisfaction is at the heart of everything we do, and we’re committed to making every meal a moment of joy. Thank you for choosing us—we’re excited to serve you!</p>
+            </div>
+            <div class="about-icons">
+                <span>
+                    <i class="fa-solid fa-circle-check icons primary-dark" style="padding-right: 0.3em;"></i>
+                    <p class="body-text">Delicious</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-circle-check icons primary-dark" style="padding-right: 0.3em;"></i>
+                    <p class="body-text">Yummy</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-circle-check icons primary-dark" style="padding-right: 0.3em;"></i>
+                    <p class="body-text">Healthy</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-circle-check icons primary-dark" style="padding-right: 0.3em;"></i>
+                    <p class="body-text">Tasty</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="about-image-box">
+            <img src="./Assets/pizza2.jpg" alt="" style="width: 100%; height: 100%;">
+        </div>
+    </section>
+
+    <section class="table">
+        <p class="heading2 primary-dark">Branches In Nepal</p>
+        <div class="table-div">
+            <table border="1">
+            <thead class="heading3">
+                    <tr>
+                        <th>Branches</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                        <th>Manager Name</th>
+                    </tr>
+                </thead>
+                <tbody class="body-text">
+                    <tr style="background-color: #FFFFFF;">
+                        <td>Kathmandu</td>
+                        <td>Durbar Marg, Kathmandu</td>
+                        <td>+977 123456790</td>
+                        <td>Ritesh Karki</td>
+                    </tr>
+                    <tr style="background-color: #FFFFFF;">
+                        <td>Pokhara</td>
+                        <td>Lakeside Road, Pokhara</td>
+                        <td>+977 102346789</td>
+                        <td>Rajesh Khadka</td>
+                    </tr>
+                    <tr style="background-color: #FFFFFF;">
+                        <td>Bhaktapur</td>
+                        <td>Taumadhi Square, Bhaktapur</td>
+                        <td>+977 239807645</td>
+                        <td>Sita Thapa</td>
+                    </tr>
+                    <tr style="background-color: #FFFFFF;">
+                        <td>Chitwan</td>
+                        <td>Bharatpur Main Road, Chitwan</td>
+                        <td>+977 987654321</td>
+                        <td>Hari Sharma</td>
+                    </tr>
+                    <tr style="background-color: #FFFFFF;">
+                        <td>Lalitpur</td>
+                        <td>Patan Durbar Square, Lalitpur</td>
+                        <td>+977 897054321</td>
+                        <td>Krishna Prasad</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <div class="success">
+            <div>
+                <h3 class="heading3 htext">15+</h3>
+                <p class="body-text htext">Years of experience</p>
+            </div>
+            <div>
+                <h3 class="heading3 htext">43</h3>
+                <p class="body-text htext">Branches in country</p>
+            </div>
+            <div>
+                <h3 class="heading3 htext">65k</h3>
+                <p class="body-text htext">Orders Delivered</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./Assets/logo2.png" alt="">
+        <div class="footer-text">
+            <div class="foot1">
+                <p class="footer-description body-text htext">We believe in delivering happiness through food! Since our inception, we’ve been committed to serving freshly prepared, flavorful dishes that satisfy cravings and bring families together. </p>
+                <div class="icon-logo">
+                    <i class="fa-brands fa-facebook icons htext "></i>
+                    <i class="fa-brands fa-instagram icons htext"></i>
+                    <i class="fab fa-tiktok icons htext"></i>
+                    <i class="fa-brands fa-twitter icons htext"></i>
+                    <i class="fa-brands fa-linkedin-in icons htext"></i>
+                    <i class="fa-brands fa-youtube icons htext"></i>
+                </div>
+            </div>
+
+            <div class="foot2">
+                <h2 class="footer-title heading3">SITEMAP</h2>
+                <div>
+                    <ul>
+                        <li><a href="index.html" class="body-text htext">HOME</a></li>
+                        <li><a href="menu.html" class="body-text htext">MENU</a></li>
+                        <li><a href="about-us.html" class="body-text htext">ABOUT US</a></li>
+                        <li><a href="contact.html" class="body-text htext">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot3">
+                <h2 class="footer-title heading3">CONTACT</h2>
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot icons htext"></i>
+                            <p class="htext price" style="display: inline-block;">121 King Street, New York, USA 90020</p>
+                        </li>
+                        <li><i class="fa-solid fa-phone icons htext"></i>
+                            <p class="htext price" style="display: inline-block;">+1 (800) 333 44 55</p>
+                        </li>
+                        <li><i class="fa-solid fa-envelope icons htext"></i>
+                            <p class="htext price" style="display: inline-block;">fastfood@hotmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="end sec-background">
+            <p class="body-text htext">Copyright © 2024 Xtra Theme. All Rights Reserved.</p>
+            <div class="terms">
+                <p class="body-text htext">Terms and Conditions</p>
+                <p class="body-text htext">Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <input type="checkbox" id="hamburgerToggle" style="display: none;">
+    
+
+    <div class="hamburger-overlay"></div>
+    
+    <section class="overlay1">
+        <div class="over1">
+            <i class="fa-solid fa-magnifying-glass htext"></i>
+            <div class="overlay1-title">
+                <p class="price htext">Search for ...</p>
+                <label for="hamburgerToggle" class="icons close-icon">
+                    <i class="fa-solid fa-xmark icons htext"></i>
+                </label>
+            </div>
+        </div>
+        <div class="hr"><hr></div>
+        <div class="over2">
+            <p class="heading3 htext" style="padding-bottom: 20px;">Navigation Bar</p>
+            <ul>
+                <li><a href="index.html" class="body-text htext">Home</a></li>
+                <li><a href="menu.html" class="body-text htext">Menu</a></li>
+                <li><a href="about-us.html" class="body-text htext">About Us</a></li>
+                <li><a href="contact.html" class="body-text htext">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

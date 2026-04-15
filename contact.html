@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar sec-background">
+            <img src="./Assets/logo3-1.png" alt="picture of logo">
+
+            <div class="excess">
+                <a href="login.html" class="user htext icons"><i class="far fa-user-circle"></i></a>
+                <label for="hamburgerToggle" class="hamburger icons htext">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="index.html" class="htext body-text">Home</a></li>
+                    <li><a href="menu.html" class="htext body-text">Menu</a></li>
+                    <li><a href="about-us.html" class="htext body-text">About Us</a></li>
+                    <li><a href="contact.html" class="htext body-text">Contact Us</a></li>
+                    <li>
+                        <a href="#" id="searchIcon" class="htext body-text" onclick="document.getElementById('searchOverlayToggle').checked = true;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>                    
+                    <li><a href="login.html" class="htext icons"><i class="far fa-user-circle"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <input type="checkbox" id="searchOverlayToggle" style="display: none;"/>
+
+    <div class="background-overlay"></div>
+    
+    <!-- Overlay Section -->
+    <section class="overlay">
+        <div class="overlay-title">
+            <p class="heading3 ptext">Search for ...</p>
+            <label for="searchOverlayToggle" class="icons close-icon">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </div>
+        <hr>
+        <div>
+            <p class="body-text" style="padding-bottom: 20px;">Navigation Bar</p>
+            <ul>
+                <li><a href="index.html" class="body-text btext">Home</a></li>
+                <li><a href="menu.html" class="body-text btext">Menu</a></li>
+                <li><a href="about-us.html" class="body-text btext">About Us</a></li>
+                <li><a href="contact.html" class="body-text btext">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="contact-book">
+        <div class="contact">
+            <div class="phone">
+                <i class="fa-solid fa-phone icons htext"></i>
+                <div class="phone-info">
+                    <h2 class="heading2 primary-dark">Phone</h2>
+                    <p class="body-text">+1 (800) 333 44 55</p>
+                </div>
+            </div>
+            <div class="email">
+                <i class="fa-solid fa-envelope icons htext"></i>    
+                <div class="email-info">
+                    <h2 class="heading2 primary-dark">Email</h2>
+                    <p class="body-text">fastfood@hotmail.com</p>
+                </div>
+            </div>
+            <div class="address">
+                <i class="fa-solid fa-location-dot icons htext"></i>
+                <div class="address-info">
+                    <h2 class="heading2 primary-dark">Address</h2>
+                    <p class="body-text">121 King Street, New York, USA </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-forum">
+        <div class="contact-form">
+            <p class="heading2 primary-dark" style="text-align: center;">Contact Form</p>
+            <form action="">
+                <div class="contact-form1">
+                    <input type="text" , placeholder="Full Name" class="body-text ptext">
+                    <input type="text" , placeholder="Email" class="body-text ptext"> 
+                </div>
+                <div class="contact-form2">
+                    <textarea placeholder="Your Message" class="body-text ptext"></textarea>
+                </div>
+            </form>
+            <button type="submit" class="btn2 body-text" style="cursor: pointer;">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./Assets/logo2.png" alt="">
+        <div class="footer-text">
+            <div class="foot1">
+                <p class="footer-description body-text htext">We believe in delivering happiness through food! Since our inception, we’ve been committed to serving freshly prepared, flavorful dishes that satisfy cravings and bring families together. </p>
+                <div class="icon-logo">
+                    <i class="fa-brands fa-facebook icons htext "></i>
+                    <i class="fa-brands fa-instagram icons htext"></i>
+                    <i class="fab fa-tiktok icons htext"></i>
+                    <i class="fa-brands fa-twitter icons htext"></i>
+                    <i class="fa-brands fa-linkedin-in icons htext"></i>
+                    <i class="fa-brands fa-youtube icons htext"></i>
+                </div>
+            </div>
+
+            <div class="foot2">
+                <h2 class="footer-title heading3">SITEMAP</h2>
+                <div>
+                    <ul>
+                        <li><a href="index.html" class="body-text htext">HOME</a></li>
+                        <li><a href="menu.html" class="body-text htext">MENU</a></li>
+                        <li><a href="about-us.html" class="body-text htext">ABOUT US</a></li>
+                        <li><a href="contact.html" class="body-text htext">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot3">
+                <h2 class="footer-title heading3">CONTACT</h2>
+                <div>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot icons htext"></i>
+                            <p class="htext price" style="display: inline-block;">121 King Street, New York, USA 90020</p>
+                        </li>
+                        <li><i class="fa-solid fa-phone icons htext"></i>
+                            <p class="htext price" style="display: inline-block;">+1 (800) 333 44 55</p>
+                        </li>
+                        <li><i class="fa-solid fa-envelope icons htext"></i>
+                            <p class="htext price" style="display: inline-block;">fastfood@hotmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="end sec-background">
+            <p class="body-text htext">Copyright © 2024 Xtra Theme. All Rights Reserved.</p>
+            <div class="terms">
+                <p class="body-text htext">Terms and Conditions</p>
+                <p class="body-text htext">Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+    
+    <input type="checkbox" id="hamburgerToggle" style="display: none;">
+
+    <div class="hamburger-overlay"></div>
+    
+    <section class="overlay1">
+        <div class="over1">
+            <i class="fa-solid fa-magnifying-glass htext"></i>
+            <div class="overlay1-title">
+                <p class="price htext">Search for ...</p>
+                <label for="hamburgerToggle" class="icons close-icon">
+                    <i class="fa-solid fa-xmark icons htext"></i>
+                </label>
+            </div>
+        </div>
+        <div class="hr"><hr></div>
+        <div class="over2">
+            <p class="heading3 htext" style="padding-bottom: 20px;">Navigation Bar</p>
+            <ul>
+                <li><a href="index.html" class="body-text htext">Home</a></li>
+                <li><a href="menu.html" class="body-text htext">Menu</a></li>
+                <li><a href="about-us.html" class="body-text htext">About Us</a></li>
+                <li><a href="contact.html" class="body-text htext">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
