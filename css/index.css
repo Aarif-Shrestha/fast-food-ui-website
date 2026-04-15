@@ -17,6 +17,15 @@ a{
     
 }
 
+/* Visible only for keyboard users; does not affect normal click flow. */
+a:focus-visible,
+button:focus-visible,
+.btn1:focus-visible,
+.btn2:focus-visible {
+    outline: 2px dashed #CB2B2B;
+    outline-offset: 3px;
+}
+
 ul li{
     list-style: none;
 }
